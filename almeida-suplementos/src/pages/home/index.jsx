@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import CardsList from '../../components/cardsList'
 import Navbar from '../../components/navbar'
 import './style.css'
 
@@ -21,7 +22,7 @@ function Home() {
           <h2>
             PRODUTOS EM <span>PROMOÇÃO</span>
           </h2>
-          COMPONENTES DOS CARDS DE PRODUTOS
+          <CardsList />
         </div>
         <hr />
         <div>
