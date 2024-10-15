@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import CardsList from '../../components/cardsList'
 import Navbar from '../../components/navbar'
+import WhatsButton from '../../components/whatsButton'
+import CardCategoria from '../../components/cardCategoria'
 import './style.css'
 
 function Home() {
@@ -29,17 +31,17 @@ function Home() {
           <h2>
             PRODUTOS MAIS <span>BUSCADOS</span>
           </h2>
-          COMPONENTES DOS CARDS DE PRODUTOS
+          <CardsList />
         </div>
         <div>
-          COMPONENTES DE CARDS BUTTON
+          <CardCategoria />
         </div>
       </main>
       <section>
         <h2>
           FAÇA SUA COMPRA PELO <span>WHATSAPP</span>
         </h2>
-        COMPONENTE BUTTON WHATSAPP
+        <WhatsButton />
         <p>Converse diretamente com um vendedor pelo WhatsApp clicando no botão acima!</p>
       </section>
       <footer>
@@ -53,7 +55,7 @@ function Home() {
         <p>
           ENTRE EM CONTATO DIRETAMENTE COM UM VENDEDOR
         </p>
-        COMPONENTE BUTTON WHATSAPP
+        <WhatsButton />
         <hr />
         <div>
           <p>Desenvolvido por:</p>
