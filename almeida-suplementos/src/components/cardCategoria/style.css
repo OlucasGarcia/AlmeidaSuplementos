@@ -1,0 +1,33 @@
+.cardDiv {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.imgProd {
+    width: 220px;
+    position: absolute;
+    z-index: -3;
+}
+
+.nameDiv {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.550);
+    border-radius: 15px;
+    position: relative;
+}
+
+.nameProd {
+    position: relative;
+    color: white;
+    font-weight: 900;
+    font-size: 32px;
+    text-align: center;
+}

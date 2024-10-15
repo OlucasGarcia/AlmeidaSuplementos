@@ -1,0 +1,20 @@
+.btnDiv {
+    width: 310px;
+    margin: 10px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to right, #189D0E, #36D42A);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0 15px;
+    color: white;
+}
+
+.imgLogo {
+    width: 25%;
+}
