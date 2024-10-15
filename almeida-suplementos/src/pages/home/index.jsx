@@ -1,17 +1,19 @@
 import { useState } from 'react'
+import Navbar from '../../components/navbar'
 import './style.css'
 
 function Home() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
+    <div className='hero'>
+
       <header>
         <img src="" alt="" />
         <h1>SUA FONTE DE <span>SUPLEMENTOS</span> PREMIUM</h1>
       </header>
       <div>
-        COMPONENTE NAVBAR
+        <Navbar />
       </div>
       <main>
         <hr />
@@ -61,7 +63,7 @@ function Home() {
         </div>
         <hr />
         <p>
-          EXEMPLO DE NOME LTDA - Rua Fulano de tal, 100 - Ribeirão Branco - SP CEP: 18.430-000 - CNPJ: 00.000.000/0000-00 © 
+          EXEMPLO DE NOME LTDA - Rua Fulano de tal, 100 - Ribeirão Branco - SP CEP: 18.430-000 - CNPJ: 00.000.000/0000-00 ©
           2024 Todos os direitos reservados.
         </p>
       </footer>
