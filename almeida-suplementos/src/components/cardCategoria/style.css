@@ -11,7 +11,6 @@
 .imgProd {
     width: 220px;
     position: absolute;
-    z-index: -3;
 }
 
 .nameDiv {
