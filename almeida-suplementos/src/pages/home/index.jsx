@@ -4,6 +4,7 @@ import Navbar from '../../components/navbar'
 import WhatsButton from '../../components/whatsButton'
 import CardCategoria from '../../components/cardCategoria'
 import Footer from '../../components/footer'
+import Background from '../../assets/fundo-header.svg'
 import './style.css'
 
 function Home() {
@@ -13,37 +14,37 @@ function Home() {
     <div className='hero'>
 
       <header>
-        <img src="" alt="" />
-        <h1>SUA FONTE DE <span>SUPLEMENTOS</span> PREMIUM</h1>
+        <img src={Background} alt="Imagem de fundo" className='headerImg' />
+        <h1 className='headerTxt'>SUA FONTE DE <span className='txtCor'>SUPLEMENTOS</span> PREMIUM</h1>
       </header>
-      <div>
+      <div className='divNavBar'>
         <Navbar />
       </div>
       <main>
-        <hr />
-        <div>
+        <div className='products'>
           <h2>
-            PRODUTOS EM <span>PROMOÇÃO</span>
+            PRODUTOS EM <span className='txtCor'>PROMOÇÃO</span>
           </h2>
           <CardsList />
         </div>
-        <hr />
-        <div>
+        <div className='products'>
+        <div className='lineDiv'></div>
           <h2>
-            PRODUTOS MAIS <span>BUSCADOS</span>
+            PRODUTOS MAIS <span className='txtCor'>BUSCADOS</span>
           </h2>
           <CardsList />
         </div>
-        <div>
+        <div className='products'>
+        <div className='lineDiv'></div>
           <CardCategoria />
         </div>
       </main>
       <section>
-        <h2>
-          FAÇA SUA COMPRA PELO <span>WHATSAPP</span>
+        <h2 className='txtWhats'>
+          FAÇA SUA COMPRA PELO <span className='txtGreen'>WHATSAPP</span>
         </h2>
         <WhatsButton />
-        <p>Converse diretamente com um vendedor pelo WhatsApp clicando no botão acima!</p>
+        <p className='txtAction'>Converse diretamente com um vendedor pelo WhatsApp clicando no botão acima!</p>
       </section>
       <footer>
         <Footer />
