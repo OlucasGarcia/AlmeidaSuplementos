@@ -3,6 +3,7 @@ import CardsList from '../../components/cardsList'
 import Navbar from '../../components/navbar'
 import WhatsButton from '../../components/whatsButton'
 import CardCategoria from '../../components/cardCategoria'
+import Footer from '../../components/footer'
 import './style.css'
 
 function Home() {
@@ -45,30 +46,7 @@ function Home() {
         <p>Converse diretamente com um vendedor pelo WhatsApp clicando no botão acima!</p>
       </section>
       <footer>
-        <img src="" alt="" />
-        <div>
-          <p>NOS SIGA NO <span>INSTAGRAM</span> PARA VER TODAS AS NOVIDADES</p>
-          <button>
-            <img src="" alt="" />
-          </button>
-        </div>
-        <p>
-          ENTRE EM CONTATO DIRETAMENTE COM UM VENDEDOR
-        </p>
-        <WhatsButton />
-        <hr />
-        <div>
-          <p>Desenvolvido por:</p>
-          <p>Lucas Garcia</p>
-          <button>LINKEDIN</button>
-          <button>GITHUB</button>
-          <button>INSTAGRAM</button>
-        </div>
-        <hr />
-        <p>
-          EXEMPLO DE NOME LTDA - Rua Fulano de tal, 100 - Ribeirão Branco - SP CEP: 18.430-000 - CNPJ: 00.000.000/0000-00 ©
-          2024 Todos os direitos reservados.
-        </p>
+        <Footer />
       </footer>
     </div>
   )
