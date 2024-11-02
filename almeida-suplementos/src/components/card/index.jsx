@@ -1,17 +1,19 @@
 import './style.css'
 import Teste from '../../assets/teste.svg'
 
-function Card () {
+function Card ( props ) {
+
+    const { product, onPress } = props
     return (
         <div className='card'>
             <div className='imgCard'>
-                <img src={Teste} alt="Produto" />
+                <img src={product.image} alt="Produto" />
             </div>
             <div>
-                <p>Nome do suplemento</p>
+                <p>{product.name}</p>
             </div>
             <div>
-                <p>R$ 000,00</p>
+                <p>{product.price}</p>
             </div>
         </div>
     )
