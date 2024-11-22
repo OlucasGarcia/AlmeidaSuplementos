@@ -30,15 +30,6 @@ header {
     color: #FF225E;
 }
 
-.divNavBar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 30px;
-    z-index: 1;
-}
-
 main {
     padding: 20px;
     padding-bottom: 80px;
