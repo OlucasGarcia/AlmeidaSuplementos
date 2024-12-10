@@ -1,21 +1,27 @@
 import './style.css'
 import Teste from '../../assets/teste.svg'
+import { Link } from 'react-router-dom'
 
-function Card ( props ) {
+function Card(props) {
 
-    const { product, onPress } = props
+    const { product } = props
+    
     return (
-        <div className='card'>
-            <div className='imgCard'>
-                <img src={product.image} alt="Produto" />
+        <Link key={product.id} to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'black' }}>
+            <div className='card'>
+
+                <div className='imgCard'>
+                    <img src={product.image} alt="Produto" />
+                </div>
+                <div>
+                    <p>{product.name}</p>
+                </div>
+                <div>
+                    <p>{product.price}</p>
+                </div>
+
             </div>
-            <div>
-                <p>{product.name}</p>
-            </div>
-            <div>
-                <p>{product.price}</p>
-            </div>
-        </div>
+        </Link>
     )
 }
 

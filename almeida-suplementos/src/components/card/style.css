@@ -1,7 +1,9 @@
 .card {
-    width: 32vh;
+    width: 15vw;
+    height: 50vh;
     padding: 20px 10px;
     margin: 40px 0;
+    text-align: center;
     display: flex;
     flex-direction: column;
     gap: 20px;

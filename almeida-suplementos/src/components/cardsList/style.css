@@ -1,6 +1,6 @@
 .list {
-    width: 105%;
     display: flex;
+    padding: 0 10px;
     flex-direction: row;
     justify-content: center;
     gap: 15px;

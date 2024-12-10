@@ -1,25 +1,19 @@
 import { useState } from 'react'
 import CardsList from '../../components/cardsList'
-import Navbar from '../../components/navbar'
 import WhatsButton from '../../components/whatsButton'
 import CardCategoria from '../../components/cardCategoria'
-import Footer from '../../components/footer'
 import Background from '../../assets/fundo-header.svg'
 import './style.css'
 
 function Home() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className='hero'>
+    <body className='hero'>
 
       <header>
         <img src={Background} alt="Imagem de fundo" className='headerImg' />
         <h1 className='headerTxt'>SUA FONTE DE <span className='txtCor'>SUPLEMENTOS</span> PREMIUM</h1>
       </header>
-      <div className='divNavBar'>
-        <Navbar />
-      </div>
       <main>
         <div className='products'>
           <h2>
@@ -39,17 +33,14 @@ function Home() {
           <CardCategoria />
         </div>
       </main>
-      <section>
+      <section className='divWhats'>
         <h2 className='txtWhats'>
           FAÇA SUA COMPRA PELO <span className='txtGreen'>WHATSAPP</span>
         </h2>
         <WhatsButton />
         <p className='txtAction'>Converse diretamente com um vendedor pelo WhatsApp clicando no botão acima!</p>
       </section>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+    </body>
   )
 }
 
