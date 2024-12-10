@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom'
 
 function Card(props) {
 
-    const { product, onPress } = props
+    const { product } = props
+    
     return (
-        <Link to="/product" style={{ textDecoration: 'none', color: 'black' }}>
+        <Link key={product.id} to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'black' }}>
             <div className='card'>
 
                 <div className='imgCard'>
