@@ -12,7 +12,7 @@ function Footer() {
             <div className='socialNetDiv'>
                 <p className='footerTxt'>NOS SIGA NO <span className='newColorTxt'>INSTAGRAM</span> PARA VER TODAS AS NOVIDADES</p>
                 <button className='socialBtn'>
-                    <img src={InstaLogo} alt="" />
+                    <img src={InstaLogo} className='instaImg'/>
                 </button>
             </div>
             <div className='whatsDivButton'>
