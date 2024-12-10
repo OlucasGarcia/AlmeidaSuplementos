@@ -1,14 +1,11 @@
 import { useState } from 'react'
 import CardsList from '../../components/cardsList'
-import Navbar from '../../components/navbar'
 import WhatsButton from '../../components/whatsButton'
 import CardCategoria from '../../components/cardCategoria'
-import Footer from '../../components/footer'
 import Background from '../../assets/fundo-header.svg'
 import './style.css'
 
 function Home() {
-  const [count, setCount] = useState(0)
 
   return (
     <body className='hero'>
@@ -36,7 +33,7 @@ function Home() {
           <CardCategoria />
         </div>
       </main>
-      <section>
+      <section className='divWhats'>
         <h2 className='txtWhats'>
           FAÇA SUA COMPRA PELO <span className='txtGreen'>WHATSAPP</span>
         </h2>
