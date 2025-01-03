@@ -15,13 +15,13 @@ function Home() {
         <h1 className='headerTxt'>SUA FONTE DE <span className='txtCor'>SUPLEMENTOS</span> PREMIUM</h1>
       </header>
       <main>
-        <div className='products'>
+        <div className='products' id='ofertas'>
           <h2>
             PRODUTOS EM <span className='txtCor'>PROMOÇÃO</span>
           </h2>
           <CardsList />
         </div>
-        <div className='products'>
+        <div className='products' id='produtos'>
         <div className='lineDiv'></div>
           <h2>
             PRODUTOS MAIS <span className='txtCor'>BUSCADOS</span>
