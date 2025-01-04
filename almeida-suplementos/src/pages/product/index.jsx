@@ -33,7 +33,8 @@ function Product() {
                     <WhatsButton/>
                 </div>
             </div>
-            <div className='newProducts'>
+            <div className='newProducts' id='produtos'>
+            <div className='lineDiv'></div>
                 <h2>MAIS <span className='txtCor'>PRODUTOS</span></h2>
                 <CardsList/>
             </div>
