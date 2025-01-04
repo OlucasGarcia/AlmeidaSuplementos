@@ -16,6 +16,7 @@ function Home() {
       </header>
       <main>
         <div className='products' id='ofertas'>
+        <div className='lineDiv'></div>
           <h2>
             PRODUTOS EM <span className='txtCor'>PROMOÇÃO</span>
           </h2>
@@ -29,7 +30,6 @@ function Home() {
           <CardsList />
         </div>
         <div className='products'>
-        <div className='lineDiv'></div>
           <CardCategoria />
         </div>
       </main>
