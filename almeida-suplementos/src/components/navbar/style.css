@@ -52,9 +52,17 @@
 
 .linkContact {
     color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .linkBtn:hover {
     color: #FF225E;
+    transition: .2s ease;
+}
+
+.btnContato:hover {
+    background-color: #36D42A;
     transition: .2s ease;
 }
