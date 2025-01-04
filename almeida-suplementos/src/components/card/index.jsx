@@ -1,5 +1,4 @@
 import './style.css'
-import Teste from '../../assets/teste.svg'
 import { Link } from 'react-router-dom'
 
 function Card(props) {
