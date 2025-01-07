@@ -2,13 +2,12 @@ import { useParams } from 'react-router-dom'
 import { useEffect } from 'react';
 
 import './style.css'
-import PRODUCTS from '../../dataset/products';
+import { PRODUCTS } from '../../dataset/products';
 import WhatsButton from '../../components/whatsButton';
 import Background from '../../assets/fundo-header.svg'
 import CardsList from '../../components/cardsList';
 
 function Product() {
-
 
     const { id } = useParams();
     const product = PRODUCTS.find((item) => item.id === id);
@@ -33,7 +32,8 @@ function Product() {
                     <WhatsButton/>
                 </div>
             </div>
-            <div className='newProducts'>
+            <div className='newProducts' id='produtos'>
+            <div className='lineDiv'></div>
                 <h2>MAIS <span className='txtCor'>PRODUTOS</span></h2>
                 <CardsList/>
             </div>

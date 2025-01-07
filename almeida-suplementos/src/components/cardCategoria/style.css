@@ -10,24 +10,31 @@
 }
 
 .imgProd {
-    width: 220px;
+    border-radius: 15px;
+    width: 250px;
     position: absolute;
 }
 
 .nameDiv {
-    height: 100%;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.550);
     border-radius: 15px;
     position: relative;
 }
 
-.nameProd {
+.prodTxt {
     position: relative;
     color: white;
     font-weight: 900;
-    font-size: 32px;
+    font-size: 34px;
     text-align: center;
+}
+
+.nameDiv:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: .2s ease;
 }

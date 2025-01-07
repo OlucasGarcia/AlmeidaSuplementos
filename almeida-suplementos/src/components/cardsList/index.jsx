@@ -1,6 +1,6 @@
 import './style.css'
 import Card from '../card'
-import PRODUCTS from '../../dataset/products'
+import { PRODUCTS } from '../../dataset/products'
 
 function CardsList () {
     return (
