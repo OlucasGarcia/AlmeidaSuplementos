@@ -72,6 +72,15 @@ section {
     padding: 30px;
 }
 
+.category {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+}
+
 .txtWhats {
     font-size: 42px;
     text-align: center;
