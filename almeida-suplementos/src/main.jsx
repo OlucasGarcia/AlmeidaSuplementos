@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Home from './pages/home'
 import Product from './pages/product'
-import Search from './pages/search/search'
+import Search from './pages/search'
 import Error from './pages/error'
 
 import './index.css'
