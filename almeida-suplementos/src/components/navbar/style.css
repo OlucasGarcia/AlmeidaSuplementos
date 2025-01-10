@@ -1,5 +1,5 @@
 .navbar {
-    width: 90%;
+    min-width: 90%;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -19,6 +19,7 @@
 }
 
 .buttons {
+    list-style: none;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -43,7 +44,7 @@
     height: 30px;
 }
 
-.btnContato {
+.btnContact {
     background-color: black;
     border: none;
     border-radius: 10px;
@@ -62,7 +63,115 @@
     transition: .2s ease;
 }
 
-.btnContato:hover {
+.btnContact:hover {
     background-color: #36D42A;
     transition: .2s ease;
+}
+
+.dropdown {
+    display: none;
+}
+
+.menuBtn {
+    width: 35px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 130px;
+    left: 65%;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    padding: 10px 0px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-weight: 800;
+    right: 100;
+}
+
+.dropdown-content a:hover {
+    background-color: #E0E0E0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+@media (max-width: 820px) {
+    .navbar {
+        height: 60px;
+        border-radius: 10px;
+
+        top: 20px;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    .buttons {
+        gap: 10px;
+        padding: 0;
+    }
+
+    .linkBtn {
+        font-size: 16px;
+    }
+
+    .linkContact {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 530px) {
+    .navbar {
+        height: 40px;
+        border-radius: 10px;
+        top: 15px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .buttons {
+        gap: 5px;
+        padding: 0;
+    }
+
+    .linkBtn {
+        font-size: 14px;
+        font-weight: 800;
+    }
+
+    .line {
+        height: 20px;
+    }
+
+    .btnContact {
+        padding: 1px 5px;
+    }
+
+    .linkContact {
+        font-size: 14px;
+        font-weight: 800;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+        padding: 6px 5px;
+    }
 }
