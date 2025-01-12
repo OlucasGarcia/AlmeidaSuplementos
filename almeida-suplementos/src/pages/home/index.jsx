@@ -42,7 +42,7 @@ function Home() {
             }
         </div>
       </main>
-      <section className='divWhats'>
+      <section >
         <h2 className='txtWhats'>
           FAÇA SUA COMPRA PELO <span className='txtGreen'>WHATSAPP</span>
         </h2>
