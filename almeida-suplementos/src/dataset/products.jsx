@@ -11,7 +11,7 @@ const PRODUCTS = [
         id: "4049",
         category: "creatina",
         name: "Creatina 300G - Max Titanium",
-        desc: "A creatina auxilia no aumento do desempenho físico durante exercícios repetidos de curta duração e alta intensidade. Formada a partir da associação de três aminoácidos de alto valor biológico (arginina, glicina e metionina), a creatina está presente naturalmente em nosso organismo, sendo que cerca de 95% do seu conteúdo é armazenado no músculo esquelético. Recomenda-se a ingestão desta substância juntamente com um carboidrato de alto índice glicêmico para facilitar o seu transporte para dentro das células musculares.",
+        desc: "A creatina auxilia no aumento do desempenho físico durante exercícios repetidos de curta duração e alta intensidade. A creatina está presente naturalmente em nosso organismo, sendo que cerca de 95% do seu conteúdo é armazenado no músculo esquelético.",
         price: "R$125,00",
         image: "https://firebasestorage.googleapis.com/v0/b/almeida-suplementos-db.appspot.com/o/images-products%2Fcreatina-max.jpeg?alt=media&token=f19fdc83-fc0c-4cac-abe9-b6709d25e5af",
     },
