@@ -38,3 +38,49 @@
     background-color: rgba(0, 0, 0, 0.6);
     transition: .2s ease;
 }
+
+
+
+/* -----RESPONSIVIDADE DO COMPONENTE----- */
+
+@media (max-width: 820px) {
+    .cardDiv {
+        width: 200px;
+        height: 200px;
+    }
+
+    .nameDiv {
+        width: 200px;
+        height: 200px;
+    }
+
+    .imgProd {
+        width: 200px;
+    }
+
+    .prodTxt {
+        font-weight: 900;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 530px) {
+    .cardDiv {
+        width: 180px;
+        height: 180px;
+    }
+
+    .nameDiv {
+        width: 180px;
+        height: 180px;
+    }
+
+    .imgProd {
+        width: 180px;
+    }
+
+    .prodTxt {
+        font-weight: 900;
+        font-size: 24px;
+    }
+}

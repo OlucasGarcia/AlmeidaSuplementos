@@ -1,12 +1,22 @@
 .list {
     display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
     padding: 0 10px;
     flex-direction: row;
     justify-content: center;
     gap: 15px;
-    overflow-x: scroll;
 }
 
-.list::-webkit-scrollbar {
-    display: none;
+
+@media (max-width: 820px) {
+    .list {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 530px) {
+    .list {
+        gap: 10px;
+    }
 }
