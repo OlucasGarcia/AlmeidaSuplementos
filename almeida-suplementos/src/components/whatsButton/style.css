@@ -1,0 +1,43 @@
+.btnWhats {
+    width: 310px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #189D0E, #36D42A);
+    cursor: pointer;
+}
+
+.whatsTxt {
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+}
+
+.imgLogo {
+    width: 25%;
+}
+
+.btnWhats:hover {
+    box-shadow: 0px 0px 10px #70fd66da;
+    transition: .2s ease;
+}
+
+
+/* -----RESPONSIVIDADE DO COMPONENTE----- */
+
+@media (max-width: 820px) {
+    .btnWhats {
+        height: auto;
+        width: 250px;
+
+    }
+
+    .whatsTxt {
+        padding: 10px 10px;
+        font-size: 16px;
+    }
+}
