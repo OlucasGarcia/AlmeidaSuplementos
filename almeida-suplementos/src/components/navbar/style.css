@@ -81,10 +81,10 @@
     position: absolute;
     background-color: white;
     min-width: 130px;
-    left: 65%;
+    right: 0;
+    top: 30px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    border-radius: 10px;
 }
 
 .dropdown-content a {
@@ -93,11 +93,10 @@
     display: block;
     color: black;
     font-weight: 800;
-    right: 100;
 }
 
 .dropdown-content a:hover {
-    background-color: #E0E0E0;
+    color: #FF225E;
 }
 
 .dropdown:hover .dropdown-content {
