@@ -4,7 +4,7 @@
 O site Almeida Suplementos é uma landing page de uma loja local, desenvolvida com Vite, ReactJS e JavaScript. A página web exibe os principais produtos da loja, com detalhes de imagens, descrição e preço. Também permite que o usuário entre em contato com o vendedor por meio de um botão que redireciona para o WhatsApp do dono da loja.
 
 ## Link de Acesso
-👨‍💻 [Almeida Suplementos](almeidasuplementos.vercel.app)
+👨‍💻 <a href="almeidasuplementos.vercel.app" />
 
 
 
