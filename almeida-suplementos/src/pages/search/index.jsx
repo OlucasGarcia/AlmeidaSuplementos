@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import './style.css'
+import styles from './style.module.css'
 import { useParams } from "react-router-dom";
 import { CATEGORIES, PRODUCTS } from "../../dataset/products";
 import Card from "../../components/card";
@@ -19,9 +19,9 @@ function Search( ) {
     const filtered = PRODUCTS.filter(product => product.category === category.title);
 
     return (
-        <div className="hero" id="produtos">
-            <h1 className="titleTxt">EXPLORE NOSSA SELEÇÃO <br></br> ESPECIAL DE <span className="txtCor">{category.product}</span></h1>
-            <div className="productsDiv" >
+        <div className={styles.hero} id="produtos">
+            <h1 className={styles.titleTxt} >EXPLORE NOSSA SELEÇÃO <br></br> ESPECIAL DE <span className={styles.txtCor}>{category.product}</span></h1>
+            <div className={styles.productsDiv} >
             {
                 filtered.length > 0 ? (
                     filtered.map(product => (
