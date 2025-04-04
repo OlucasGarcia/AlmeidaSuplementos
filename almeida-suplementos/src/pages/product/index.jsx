@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
-import { useEffect } from 'react';
+import { startTransition, useEffect } from 'react';
 
-import './style.css'
+import styles from './style.module.css'
 import { PRODUCTS } from '../../dataset/products';
 import WhatsButton from '../../components/whatsButton';
 import Background from '../../assets/fundo-header.svg'
@@ -22,27 +22,27 @@ function Product() {
 
     return (
         <div>
-            <div className='productDiv'>
-                <img src={Background} className='backgroundImg' />
-                <div className='productInfos'>
-                    <img src={product.image} className='productImage' />
-                    <div className='productInfosTxt'>
-                        <p className='nameProd'>{product.name}</p>
-                        <p className='descProd'>{product.desc}</p>
-                        <p className='priceProd'>{product.price}</p>
+            <div className={styles.productDiv}>
+                <img src={Background} className={styles.backgroundImg} />
+                <div className={styles.productInfos} >
+                    <img src={product.image} className={styles.productImage} />
+                    <div className={styles.productInfosTxt} >
+                        <p className={styles.nameProd} >{product.name}</p>
+                        <p className={styles.descProd} >{product.desc}</p>
+                        <p className={styles.priceProd} >{product.price}</p>
                         <WhatsButton />
                     </div>
                 </div>
             </div>
-            <div className='newProducts' id='produtos'>
-                <div className='lineDiv'></div>
-                <h2>MAIS <span className='txtCor'>PRODUTOS</span></h2>
+            <div className={styles.newProducts} id='produtos'>
+                <div className={styles.lineDiv} ></div>
+                <h2>MAIS <span className={styles.txtCor} >PRODUTOS</span></h2>
                 <CardsList />
             </div>
-            <div className='divWhats'>
-                <h2 className='txtWhats'>FAÇA SUA COMPRA PELO <span className='txtGreen'>WHATSAPP</span></h2>
+            <div className={styles.divWhats} >
+                <h2 className={styles.txtWhats} >FAÇA SUA COMPRA PELO <span className={styles.txtGreen} >WHATSAPP</span></h2>
                 <WhatsButton />
-                <p className='txtAction'>Converse diretamente com um vendedor pelo <br /> WhatsApp clicando no botão acima!</p>
+                <p className={styles.txtAction} >Converse diretamente com um vendedor pelo <br /> WhatsApp clicando no botão acima!</p>
             </div>
         </div>
     )
