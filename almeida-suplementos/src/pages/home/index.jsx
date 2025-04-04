@@ -2,34 +2,34 @@ import CardsList from '../../components/cardsList'
 import WhatsButton from '../../components/whatsButton'
 import CardCategoria from '../../components/cardCategoria'
 import Background from '../../assets/fundo-header.svg'
-import './style.css'
+import styles from './style.module.css'
 import { CATEGORIES } from '../../dataset/products'
 
 function Home() {
 
   return (
-    <div className='hero'>
+    <div className={styles.page}>
 
       <header>
-        <img src={Background} alt="Imagem de fundo" className='headerImg' />
-        <h1 className='headerTxt'>SUA FONTE DE <span className='txtCor'>SUPLEMENTOS</span> PREMIUM</h1>
+        <img src={Background} alt="Imagem de fundo" className={styles.headerImg} />
+        <h1 className={styles.headerTxt} >SUA FONTE DE <span className={styles.txtCor} >SUPLEMENTOS</span> PREMIUM</h1>
       </header>
       <main>
-        <div className='products' id='ofertas'>
-        <div className='lineDiv'></div>
+        <div className={styles.products} id='ofertas'>
+        <div className={styles.lineDiv} ></div>
           <h2>
-            PRODUTOS EM <span className='txtCor'>PROMOÇÃO</span>
+            PRODUTOS EM <span className={styles.txtCor}>PROMOÇÃO</span>
           </h2>
           <CardsList />
         </div>
-        <div className='products' id='produtos'>
-        <div className='lineDiv'></div>
+        <div className={styles.products} id='produtos'>
+        <div className={styles.lineDiv} ></div>
           <h2>
-            PRODUTOS MAIS <span className='txtCor'>BUSCADOS</span>
+            PRODUTOS MAIS <span className={styles.txtCor} >BUSCADOS</span>
           </h2>
           <CardsList />
         </div>
-        <div className='category'>
+        <div className={styles.category} >
           {
                 CATEGORIES.map(
                     (category) => {
@@ -43,11 +43,11 @@ function Home() {
         </div>
       </main>
       <section >
-        <h2 className='txtWhats'>
-          FAÇA SUA COMPRA PELO <span className='txtGreen'>WHATSAPP</span>
+        <h2 className={styles.txtWhats}>
+          FAÇA SUA COMPRA PELO <span className={styles.txtGreen} >WHATSAPP</span>
         </h2>
         <WhatsButton />
-        <p className='txtAction'>Converse diretamente com um vendedor pelo WhatsApp clicando no botão acima!</p>
+        <p className={styles.txtAction} >Converse diretamente com um vendedor pelo WhatsApp clicando no botão acima!</p>
       </section>
     </div>
   )
