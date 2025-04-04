@@ -1,4 +1,4 @@
-import './style.css'
+import styles from './style.module.css'
 import { Link } from 'react-router-dom'
 
 function Card(props) {
@@ -7,10 +7,10 @@ function Card(props) {
     
     return (
         <Link key={product.id} to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'black' }}>
-            <div className='card'>
+            <div className={styles.card}>
 
-                <div className='imgCard'>
-                    <img src={product.image} alt="Produto" />
+                <div className={styles.imgCard}>
+                    <img src={product.image} alt={product.name} />
                 </div>
                 <div>
                     <p>{product.name}</p>
