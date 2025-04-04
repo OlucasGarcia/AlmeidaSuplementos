@@ -1,4 +1,4 @@
-import './style.css'
+import styles from './style.module.css'
 import { Link } from 'react-router-dom'
 
 function CardCategoria(props) {
@@ -6,11 +6,11 @@ function CardCategoria(props) {
     const { category } = props
 
     return (
-        <div className='cardDiv'>
+        <div className={styles.cardDiv}>
             <Link key={category.id} to={`/search/${category.title}`} style={{ textDecoration: 'none', display: 'flex' }}>
-                <img src={category.image} alt="" className='imgProd' />
-                <div className='nameDiv'>
-                    <p className='prodTxt'>{category.product}</p>
+                <img src={category.image} alt={category.product} className={styles.imgProd} />
+                <div className={styles.nameDiv}>
+                    <p className={styles.prodTxt}>{category.product}</p>
                 </div>
             </Link>
         </div>
