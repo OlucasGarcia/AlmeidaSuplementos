@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.hero {
+.page {
     display: flex;
     flex-direction: column;
 }

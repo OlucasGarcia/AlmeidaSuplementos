@@ -76,7 +76,7 @@
     width: 35px;
 }
 
-.dropdown-content {
+.dropdownContent {
     display: none;
     position: absolute;
     background-color: white;
@@ -87,7 +87,7 @@
     z-index: 1;
 }
 
-.dropdown-content a {
+.dropdownContent a {
     padding: 10px 0px;
     text-decoration: none;
     display: block;
@@ -95,7 +95,7 @@
     font-weight: 800;
 }
 
-.dropdown-content a:hover {
+.dropdownContent a:hover {
     color: #FF225E;
 }
 
