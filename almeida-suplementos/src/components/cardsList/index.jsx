@@ -1,10 +1,10 @@
-import './style.css'
+import styles from './style.module.css'
 import Card from '../card'
 import { PRODUCTS } from '../../dataset/products'
 
 function CardsList () {
     return (
-        <div className='list'>
+        <div className={styles.list}>
             {
                 PRODUCTS.map(
                     (product) => {
