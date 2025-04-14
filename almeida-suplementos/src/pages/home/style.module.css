@@ -29,6 +29,7 @@ header {
     position: relative;
     text-shadow: 10px 1px 30px rgb(0, 0, 0);
     align-self: center;
+    text-align: center;
     padding: 20px;
 }
 
