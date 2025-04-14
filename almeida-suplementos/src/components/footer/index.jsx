@@ -39,7 +39,7 @@ function Footer() {
                         </a>
                     </button>
                     <button className={styles.socialBtn}>
-                        <a href="https://www.instagram.com/oluucasgarcia/" target='_blank' >
+                        <a href="https://www.instagram.com/_olucxx/" target='_blank' >
                             <img src={InstaLogo} alt="Instragram" className={styles.socialImg} />
                         </a>
                     </button>
