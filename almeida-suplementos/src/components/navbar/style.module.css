@@ -81,8 +81,11 @@
     position: absolute;
     background-color: white;
     min-width: 130px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     right: 0;
-    top: 30px;
+    padding: 5px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -99,7 +102,7 @@
     color: #FF225E;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdownContent {
     display: block;
 }
 
